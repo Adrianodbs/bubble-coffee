@@ -1,7 +1,7 @@
-import styles from './Social.module.scss'
+import styles from './Reviews.module.scss'
 
-function Social() {
-  return <section className={styles.social}>Social</section>
+function Reviews() {
+  return <section className={styles.reviews}>Reviews</section>
 }
 
-export default Social
+export default Reviews
