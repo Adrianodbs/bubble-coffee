@@ -1,6 +1,6 @@
 import Stars from '@/UI/Stars'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import styles from './Reviews.module.scss'
 
 const reviews = [
@@ -40,11 +40,6 @@ const Reviews = () => {
     setCurrentReview(
       currentReview === 0 ? reviews.length - 1 : currentReview - 1
     )
-
-  useEffect(() => {
-    const interval = setInterval(nextReview, 5000)
-    return () => clearInterval(interval)
-  }, [currentReview])
 
   const { avatar, name, role, stars, comment } = reviews[currentReview]
 
